@@ -4,6 +4,7 @@ import { LoginLink, RegisterLink, getKindeServerSession } from "@kinde-oss/kinde
 import { ArrowRight } from "lucide-react"
 import { buttonVariants } from "./ui/button"
 import UserAccountNav from "./UserAccountNav"
+import MobileNav from "./MobileNav"
 
 const Navbar = async () => {
 
@@ -21,7 +22,7 @@ const Navbar = async () => {
 
                     </Link>
 
-                    {/*todo: add mobile Navbar*/}
+                    <MobileNav isAuth={!!user} />
 
                     <div className="hidden items-center space-x-4 sm:flex">
                         {!user ? <>
