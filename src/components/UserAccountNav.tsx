@@ -61,7 +61,7 @@ async function UserAccountNav({ email, imageUrl, name }: UserAccountNavProps) {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem asChild>
-          <Link href="/dashboard">Dashboard</Link>
+          <Link href='/dashboard'>dashboard</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           {subscriptionPlan?.isSubscribed ? (
